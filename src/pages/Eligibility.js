@@ -21,7 +21,7 @@ const Eligibility = () => {
         body: JSON.stringify({ phoneNumber, message }),
       });
       const result = await response.text();
-      setFormResponse(result);
+      setFormResponse('Message has been sent!'); //This is where the sent message appears 
     } catch (error) {
       setFormResponse('Error sending message.');
     }
@@ -48,6 +48,16 @@ const Eligibility = () => {
           </div>
         </header>
 
+        <label htmlFor="name">
+            Name:
+            <input type="text" id="name" />
+        </label>
+
+        <label htmlFor="name">
+            Address:
+            <input type="text" id="address" />
+        </label>
+
         <form onSubmit={handleSubmit}>
           <label htmlFor="phoneNumber">Phone Number:</label>
           <input
@@ -72,7 +82,6 @@ const Eligibility = () => {
           <br />
           <button type="submit">Send Message</button>
         </form>
-
         {formResponse && <p>{formResponse}</p>}
       </article>
     </Main>
