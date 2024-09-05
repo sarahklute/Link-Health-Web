@@ -74,7 +74,7 @@ const Eligibility = () => {
           <textarea
             id="message"
             name="message"
-            placeholder="Hello from Link Heatlh"
+            placeholder="Hello from Link Health"
             value={formData.message}
             onChange={handleInputChange}
             required
