@@ -21,7 +21,7 @@ const Eligibility = () => {
         body: JSON.stringify({ phoneNumber, message }),
       });
       const result = await response.text();
-      setFormResponse('Message has been sent!'); //This is where the sent message appears 
+      setFormResponse('Info has been sent to Link Health. You have recieved a confirmation SMS!'); //This is where the sent message appears 
     } catch (error) {
       setFormResponse('Error sending message.');
     }
@@ -42,9 +42,9 @@ const Eligibility = () => {
         <header>
           <div className="title">
             <h2>
-              <Link to="/eligibility">Eligibility Check</Link>
+              <Link to="/eligibility">Eligibility Screener</Link>
             </h2>
-            <p>Enter your details to check eligibility and send a message</p>
+            <p>Enter your details to check eligibility for Federal Benefit Programs and connect with Link Health</p>
           </div>
         </header>
 
@@ -70,17 +70,8 @@ const Eligibility = () => {
             required
           />
           <br />
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Hello from Link Heatlh"
-            value={formData.message}
-            onChange={handleInputChange}
-            required
-          />
-          <br />
-          <button type="submit">Send Message</button>
+          
+          <button type="submit">Send Info to Link Health</button>
         </form>
         {formResponse && <p>{formResponse}</p>}
       </article>
