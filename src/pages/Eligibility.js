@@ -70,7 +70,16 @@ const Eligibility = () => {
             required
           />
           <br />
-          
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Hello from Link Heatlh"
+            value={formData.message}
+            onChange={handleInputChange}
+            required
+          />
+          <br />
           <button type="submit">Send Info to Link Health</button>
         </form>
         {formResponse && <p>{formResponse}</p>}
