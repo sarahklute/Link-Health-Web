@@ -2,19 +2,11 @@ const routes = [
   {
     index: true,
     label: 'Link Health',
-    path: '/',
-  },
-  {
-    label: 'About',
-    path: '/about',
+    path: '/eligibility',
   },
   {
     label: 'Eligibility',
     path: '/eligibility',
-  },
-  {
-    label: 'Contact',
-    path: '/contact',
   },
 ];
 
