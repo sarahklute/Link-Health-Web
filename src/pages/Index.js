@@ -19,10 +19,6 @@ const Index = () => (
           <p>
             A website created by Rishabh and Sarah to simplify the Link Health intake process.
           </p>
-          <label htmlFor="name">
-            Name:
-            <input type="text" id="name" />
-          </label>
         </div>
       </header>
     </article>
