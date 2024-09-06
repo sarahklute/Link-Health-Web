@@ -53,11 +53,6 @@ const Eligibility = () => {
             <input type="text" id="name" />
         </label>
 
-        <label htmlFor="name">
-            Address:
-            <input type="text" id="address" />
-        </label>
-
         <form onSubmit={handleSubmit}>
           <label htmlFor="phoneNumber">Phone Number:</label>
           <input
@@ -74,7 +69,7 @@ const Eligibility = () => {
           <textarea
             id="message"
             name="message"
-            placeholder="Hello from Link Heatlh"
+            placeholder="You have connected to Link Health"
             value={formData.message}
             onChange={handleInputChange}
             required
